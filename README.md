@@ -84,6 +84,8 @@ WebTechnology_Assignment1/
 5. Run the webpage using a browser or the Live Server extension in VS Code.
 6. For JavaScript-based questions, make sure the corresponding `script.js` file is correctly linked to the HTML file.
 
+For Live URL check at : https://lileshtiwari.github.io/WebTechnology-Assignment-1/
+
 ---
 
 ## 🎯 Learning Outcomes

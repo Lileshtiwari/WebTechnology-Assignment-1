@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background: linear-gradient(135deg, #111827, #2563eb);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Main */
+
+main {
+    max-width: 1150px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* Introduction */
+
+.intro {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.intro h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    color: #111827;
+}
+
+.intro p {
+    max-width: 750px;
+    margin: auto;
+    color: #6b7280;
+}
+
+/* Cards */
+
+.questions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+}
+
+.card .number {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 23px;
+    margin-bottom: 12px;
+    color: #111827;
+}
+
+.card p {
+    color: #6b7280;
+    margin-bottom: 22px;
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.card a:hover {
+    background: #1d4ed8;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #111827;
+    color: #d1d5db;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .header-content h1 {
+        font-size: 30px;
+    }
+
+    .questions {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 35px 15px;
+    }
+}

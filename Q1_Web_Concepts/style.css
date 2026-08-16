@@ -341,9 +341,7 @@ body {
 }
 
 
-/* =========================================
-   WEBSITE WORKFLOW
-   ========================================= */
+/* WEBSITE WORKFLOW */
 
 .workflow {
     display: flex;
@@ -399,9 +397,7 @@ body {
 }
 
 
-/* =========================================
-   CLIENT VS SERVER
-   ========================================= */
+/* CLIENT VS SERVER */
 
 .comparison {
     display: grid;

@@ -1,6 +1,6 @@
-/* =========================================
+/* 
    FRESHMART SUPERMARKET BILLING SYSTEM
-   ========================================= */
+    */
 
 
 /*
@@ -83,9 +83,9 @@ const DISCOUNT_LIMIT = 2000;
 const GST_RATE = 0.05;
 
 
-/* =========================================
+/* 
    ADD PRODUCT
-   ========================================= */
+    */
 
 function addProduct() {
 
@@ -165,9 +165,9 @@ function addProduct() {
 }
 
 
-/* =========================================
+/* 
    DISPLAY BILL
-   ========================================= */
+    */
 
 function displayBill() {
 
@@ -257,9 +257,9 @@ function displayBill() {
 }
 
 
-/* =========================================
+/* 
    CALCULATE BILL
-   ========================================= */
+    */
 
 function calculateBill() {
 
@@ -373,9 +373,9 @@ function calculateBill() {
 }
 
 
-/* =========================================
+/* 
    CALCULATE CHANGE
-   ========================================= */
+    */
 
 function calculateChange(grandTotal) {
 
@@ -405,9 +405,9 @@ function calculateChange(grandTotal) {
 }
 
 
-/* =========================================
+/* 
    UPDATE ITEM COUNT
-   ========================================= */
+    */
 
 function updateItemCount() {
 
@@ -436,9 +436,9 @@ function updateItemCount() {
 }
 
 
-/* =========================================
+/* 
    REMOVE ITEM
-   ========================================= */
+    */
 
 function removeItem(index) {
 
@@ -449,9 +449,9 @@ function removeItem(index) {
 }
 
 
-/* =========================================
+/* 
    CLEAR CART
-   ========================================= */
+    */
 
 function clearCart() {
 
@@ -471,9 +471,9 @@ function clearCart() {
 }
 
 
-/* =========================================
+/* 
    GENERATE BILL
-   ========================================= */
+    */
 
 function generateBill() {
 
@@ -709,9 +709,9 @@ function generateBill() {
 }
 
 
-/* =========================================
+/* 
    EVENT LISTENERS
-   ========================================= */
+    */
 
 document
     .getElementById("addBtn")

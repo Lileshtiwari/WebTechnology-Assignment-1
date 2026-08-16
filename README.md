@@ -37,6 +37,8 @@ An interactive **Supermarket Billing System** developed using JavaScript. It dem
 WebTechnology_Assignment1/
 │
 ├── Q1_Web_Concepts/
+│   ├── index.html
+│   └── style.css
 │
 ├── Q2_Admission_Form/
 │   ├── index.html

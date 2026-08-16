@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Technology Fundamentals</title>
+
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <h1>Web Technology Fundamentals</h1>
+            <p>Understanding the Basic Concepts of the World Wide Web</p>
+        </div>
+    </header>
+
+
+    <!--  NAVIGATION  -->
+    <nav class="navbar">
+        <a href="#internet">Internet</a>
+        <a href="#network">Networks</a>
+        <a href="#url">URL</a>
+        <a href="#domain">Domain</a>
+        <a href="#browser">Browser & Server</a>
+        <a href="#working">Website Working</a>
+        <a href="#scripting">Scripting</a>
+    </nav>
+
+
+    <main class="container">
+
+        <!--  1. INTERNET OVERVIEW  -->
+        <section id="internet" class="topic-card">
+
+            <span class="topic-number">01</span>
+
+            <h2>Internet Overview</h2>
+
+            <p>
+                The Internet is a worldwide network of interconnected
+                computers and devices that communicate with each other
+                using standard communication protocols.
+            </p>
+
+            <p>
+                It allows users to access websites, exchange information,
+                communicate through email and messaging services, share
+                files, and use many online applications.
+            </p>
+
+            <!-- Internet Illustration -->
+            <div class="diagram">
+
+                <div class="device">
+                    <div class="icon">💻</div>
+                    <strong>User Device</strong>
+                </div>
+
+                <div class="arrow">↔</div>
+
+                <div class="internet-cloud">
+                    <div class="cloud-icon">☁</div>
+                    <strong>Internet</strong>
+                </div>
+
+                <div class="arrow">↔</div>
+
+                <div class="device">
+                    <div class="icon">🖥️</div>
+                    <strong>Remote Server</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 2. NETWORK CONCEPTS -->
+        <section id="network" class="topic-card">
+
+            <span class="topic-number">02</span>
+
+            <h2>Fundamental Computer Network Concepts</h2>
+
+            <p>
+                A computer network is a collection of interconnected
+                computers and devices that communicate and share resources.
+            </p>
+
+            <div class="network-diagram">
+
+                <div class="network-device">💻<br><span>Computer</span></div>
+
+                <div class="connection"></div>
+
+                <div class="network-device router">
+                    📡<br>
+                    <span>Router</span>
+                </div>
+
+                <div class="connection"></div>
+
+                <div class="network-device">🖥️<br><span>Server</span></div>
+
+            </div>
+
+            <div class="concept-grid">
+
+                <div class="small-card">
+                    <h3>IP Address</h3>
+                    <p>
+                        A numerical address used to identify a device
+                        on a network.
+                    </p>
+                </div>
+
+                <div class="small-card">
+                    <h3>Protocol</h3>
+                    <p>
+                        A set of rules that defines how devices
+                        communicate with each other.
+                    </p>
+                </div>
+
+                <div class="small-card">
+                    <h3>Router</h3>
+                    <p>
+                        A networking device that forwards data between
+                        different networks.
+                    </p>
+                </div>
+
+                <div class="small-card">
+                    <h3>Client</h3>
+                    <p>
+                        A device or application that requests services
+                        from another computer.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--  3. URL  -->
+        <section id="url" class="topic-card">
+
+            <span class="topic-number">03</span>
+
+            <h2>URL and Its Structure</h2>
+
+            <p>
+                URL stands for <strong>Uniform Resource Locator</strong>.
+                It is the address used to locate a resource on the Web.
+            </p>
+
+            <div class="url-box">
+                <span class="protocol">https://</span><span
+                class="domain-part">www.example.com</span><span
+                class="path">/students/profile.html</span>
+            </div>
+
+            <div class="url-parts">
+
+                <div>
+                    <strong>https://</strong>
+                    <p>Protocol used to access the resource.</p>
+                </div>
+
+                <div>
+                    <strong>www.example.com</strong>
+                    <p>Domain name of the website.</p>
+                </div>
+
+                <div>
+                    <strong>/students/</strong>
+                    <p>Path to a particular location.</p>
+                </div>
+
+                <div>
+                    <strong>profile.html</strong>
+                    <p>Name of the requested resource.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--  4. DOMAIN NAME  -->
+        <section id="domain" class="topic-card">
+
+            <span class="topic-number">04</span>
+
+            <h2>Domain Name</h2>
+
+            <p>
+                A domain name is a human-readable name used to identify
+                a website on the Internet. It is easier for users to
+                remember than a numerical IP address.
+            </p>
+
+            <div class="domain-example">
+
+                <span>www</span>
+                <span class="dot">.</span>
+                <span>example</span>
+                <span class="dot">.</span>
+                <span>com</span>
+
+            </div>
+
+            <div class="domain-labels">
+
+                <div>
+                    <strong>www</strong>
+                    <p>Web service prefix</p>
+                </div>
+
+                <div>
+                    <strong>example</strong>
+                    <p>Domain name</p>
+                </div>
+
+                <div>
+                    <strong>.com</strong>
+                    <p>Top-level domain</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--  5. BROWSER AND SERVER  -->
+        <section id="browser" class="topic-card">
+
+            <span class="topic-number">05</span>
+
+            <h2>Web Browsers and Web Servers</h2>
+
+            <p>
+                A web browser is a software application used by users
+                to access and display web pages. Examples include
+                Chrome, Edge, Firefox and Safari.
+            </p>
+
+            <p>
+                A web server is a computer system or software that
+                stores and delivers website resources to clients
+                when requested.
+            </p>
+
+            <div class="browser-server">
+
+                <div class="box browser-box">
+                    <div class="large-icon">🌐</div>
+                    <h3>Web Browser</h3>
+                    <p>Requests and displays web pages.</p>
+                </div>
+
+                <div class="request-flow">
+                    <div>HTTP Request →</div>
+                    <div>← HTTP Response</div>
+                </div>
+
+                <div class="box server-box">
+                    <div class="large-icon">🖥️</div>
+                    <h3>Web Server</h3>
+                    <p>Processes requests and sends resources.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 6. WORKING OF WEBSITE  -->
+        <section id="working" class="topic-card">
+
+            <span class="topic-number">06</span>
+
+            <h2>Working Principle of a Website</h2>
+
+            <p>
+                When a user enters a website address, the browser sends
+                a request to the appropriate web server. The server
+                processes the request and sends the required resources
+                back to the browser, which displays the webpage.
+            </p>
+
+            <div class="workflow">
+
+                <div class="workflow-step">
+                    <span>1</span>
+                    <h3>User</h3>
+                    <p>Enters a website address.</p>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="workflow-step">
+                    <span>2</span>
+                    <h3>Browser</h3>
+                    <p>Sends a request.</p>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="workflow-step">
+                    <span>3</span>
+                    <h3>Web Server</h3>
+                    <p>Processes the request.</p>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="workflow-step">
+                    <span>4</span>
+                    <h3>Response</h3>
+                    <p>Sends website resources.</p>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="workflow-step">
+                    <span>5</span>
+                    <h3>Webpage</h3>
+                    <p>Browser displays the page.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--7. CLIENT VS SERVER  -->
+        <section id="scripting" class="topic-card">
+
+            <span class="topic-number">07</span>
+
+            <h2>Client-side vs Server-side Scripting</h2>
+
+            <p>
+                Client-side scripting is executed in the user's web
+                browser, whereas server-side scripting is executed
+                on the web server.
+            </p>
+
+            <div class="comparison">
+
+                <div class="comparison-card client">
+
+                    <h3>Client-side Scripting</h3>
+
+                    <div class="comparison-icon">💻</div>
+
+                    <ul>
+                        <li>Runs in the web browser.</li>
+                        <li>Used for interactive interfaces.</li>
+                        <li>Can respond quickly to user actions.</li>
+                        <li>JavaScript is commonly used.</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="vs">VS</div>
+
+
+                <div class="comparison-card server">
+
+                    <h3>Server-side Scripting</h3>
+
+                    <div class="comparison-icon">🖥️</div>
+
+                    <ul>
+                        <li>Runs on the web server.</li>
+                        <li>Processes requests and data.</li>
+                        <li>Can communicate with databases.</li>
+                        <li>Examples include PHP, Python and Node.js.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONCLUSION  -->
+        <section class="conclusion">
+
+            <h2>Conclusion</h2>
+
+            <p>
+                This webpage presents the fundamental concepts of
+                Internet and Web Technology. It explains how networks,
+                URLs, domains, browsers and servers work together to
+                provide web services. It also highlights the difference
+                between client-side and server-side scripting.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!--  FOOTER  -->
+    <footer class="footer">
+
+        <p>
+            Web Technology Assignment I | HTML5, CSS3 & JS | Lilesh Kumar Tiwari
+        </p>
+
+    </footer>
+
+</body>
+</html>

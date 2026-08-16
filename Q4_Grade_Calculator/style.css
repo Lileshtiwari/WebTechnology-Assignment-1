@@ -1,0 +1,371 @@
+/* =========================================
+   BASIC RESET
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f1f5f9;
+
+    color: #1e293b;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    background: linear-gradient(
+        135deg,
+        #1e3a8a,
+        #2563eb
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+.header h1 {
+    font-size: 38px;
+
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 17px;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.container {
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 40px auto;
+}
+
+
+/* =========================================
+   CALCULATOR CARD
+   ========================================= */
+
+.calculator-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.calculator-card > h2 {
+    text-align: center;
+
+    color: #1e3a8a;
+
+    margin-bottom: 5px;
+}
+
+.instruction {
+    text-align: center;
+
+    color: #64748b;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   SUBJECT GRID
+   ========================================= */
+
+.subjects {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.subject {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.subject label {
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+.subject input {
+    padding: 13px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.subject input:focus {
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.button-group {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+button {
+    border: none;
+
+    padding: 13px 25px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.calculate-btn {
+    background: #2563eb;
+
+    color: white;
+}
+
+.calculate-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+.reset-btn {
+    background: #64748b;
+
+    color: white;
+}
+
+.reset-btn:hover {
+    background: #475569;
+}
+
+
+/* =========================================
+   RESULT
+   ========================================= */
+
+.result {
+    margin-top: 35px;
+
+    padding-top: 30px;
+
+    border-top: 2px solid #e2e8f0;
+}
+
+.result h2 {
+    text-align: center;
+
+    color: #1e3a8a;
+
+    margin-bottom: 20px;
+}
+
+.result-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.result-box {
+    text-align: center;
+
+    background: #eff6ff;
+
+    border: 1px solid #bfdbfe;
+
+    border-radius: 10px;
+
+    padding: 20px;
+}
+
+.result-box span {
+    display: block;
+
+    font-size: 13px;
+
+    color: #64748b;
+
+    margin-bottom: 5px;
+}
+
+.result-box strong {
+    display: block;
+
+    font-size: 28px;
+
+    color: #1e3a8a;
+
+    margin-bottom: 3px;
+}
+
+.result-box small {
+    color: #64748b;
+}
+
+
+/* =========================================
+   GRADING SYSTEM
+   ========================================= */
+
+.grading-system {
+    margin-top: 35px;
+
+    padding: 25px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 10px;
+}
+
+.grading-system h3 {
+    color: #1e3a8a;
+
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+
+    border: 1px solid #cbd5e1;
+
+    text-align: center;
+}
+
+th {
+    background: #1e3a8a;
+
+    color: white;
+}
+
+td {
+    background: white;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+    background: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .subjects {
+        grid-template-columns: 1fr;
+    }
+
+    .result-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .calculator-card {
+        padding: 20px;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+}

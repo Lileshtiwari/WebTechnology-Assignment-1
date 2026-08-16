@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Admission Form</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <img
+        src="https://www.kpriet.ac.in/asset/frontend/images/logo/kprietLogo.png"
+        alt="KPR Institute of Engineering and Technology Logo"
+        class="college-logo"
+    >
+
+</header>
+
+
+    <!-- ================= MAIN CONTAINER ================= -->
+
+    <main class="container">
+
+        <!-- Introduction -->
+
+        <section class="intro">
+
+            <h2>Student Admission Form</h2>
+
+            <p>
+                Welcome to the online admission portal. Please fill in
+                all the required information carefully.
+            </p>
+
+        </section>
+
+
+        <!-- ================= MEDIA SECTION ================= -->
+
+        <section class="media-section">
+
+            <h2>About Our Institution</h2>
+
+            <!-- Image media element -->
+            <img
+                src="https://www.kpriet.ac.in/asset/frontend/images/general/admissions/collegebg.jpg"
+                alt="College campus"
+                class="college-image"
+            >
+
+            <p class="media-caption">
+                Our institution provides a modern learning environment
+                with excellent academic and campus facilities.
+            </p>
+
+            <!-- Video media element -->
+           <div class="media-box">
+
+    <h3>Campus Introduction Video</h3>
+
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/yrLmWpyHbqs"
+        title="Campus Introduction Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+
+            <!-- Audio media element -->
+            <div class="media-box">
+
+                <h3>Admission Information Audio</h3>
+
+                <audio controls>
+
+                    <source
+                        src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+                        type="audio/mpeg"
+                    >
+
+                    Your browser does not support the audio element.
+
+                </audio>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ADMISSION FORM ================= -->
+
+        <section class="form-section">
+
+            <form>
+
+                <!-- ================= PERSONAL DETAILS ================= -->
+
+                <fieldset>
+
+                    <legend>Personal Information</legend>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="firstName">
+                                First Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                placeholder="Enter first name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+
+                        <label for="middleName">
+                        Middle Name <span class="optional">(Optional)</span>
+                       </label>
+
+                       <input
+                         type="text"
+                         id="middleName"
+                         name="middleName"
+                         placeholder="Enter middle name"
+                         >
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="lastName">
+                                Last Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                placeholder="Enter last name"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="dob">
+                                Date of Birth *
+                            </label>
+
+                            <input
+                                type="date"
+                                id="dob"
+                                name="dob"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Gender *</label>
+
+                            <div class="radio-group">
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                        value="male"
+                                        required
+                                    >
+                                    Male
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                        value="female"
+                                    >
+                                    Female
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                        value="other"
+                                    >
+                                    Other
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address *
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="student@example.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Mobile Number *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="+91 9876543210"
+                                pattern="[0-9]{10}"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="photo">
+                                Upload Photograph
+                            </label>
+
+                            <input
+                                type="file"
+                                id="photo"
+                                name="photo"
+                                accept="image/*"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- ================= ADDRESS ================= -->
+
+                <fieldset>
+
+                    <legend>Address Information</legend>
+
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+
+                            <label for="address">
+                                Address *
+                            </label>
+
+                            <textarea
+                                id="address"
+                                name="address"
+                                rows="4"
+                                placeholder="Enter your complete address"
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="city">
+                                City *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                placeholder="Enter city"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="state">
+                                State *
+                            </label>
+
+                            <select id="state" name="state" required>
+
+                                <option value="">
+                                    Select State
+                                </option>
+
+                                <option value="tamilnadu">
+                                    Tamil Nadu
+                                </option>
+
+                                <option value="karnataka">
+                                    Karnataka
+                                </option>
+
+                                <option value="kerala">
+                                    Kerala
+                                </option>
+
+                                <option value="maharashtra">
+                                    Maharashtra
+                                </option>
+
+                                <option value="delhi">
+                                    Delhi
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="pincode">
+                                PIN Code *
+                            </label>
+
+                            <input
+                                type="number"
+                                id="pincode"
+                                name="pincode"
+                                placeholder="Enter PIN code"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- ================= ACADEMIC DETAILS ================= -->
+
+                <fieldset>
+
+                    <legend>Academic Information</legend>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="qualification">
+                                Highest Qualification *
+                            </label>
+
+                            <select
+                                id="qualification"
+                                name="qualification"
+                                required
+                            >
+
+                                <option value="">
+                                    Select Qualification
+                                </option>
+
+                                <option value="10th">
+                                    10th / SSLC
+                                </option>
+
+                                <option value="12th">
+                                    12th / HSC
+                                </option>
+
+                                <option value="diploma">
+                                    Diploma
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="percentage">
+                                Percentage / CGPA *
+                            </label>
+
+                            <input
+                                type="number"
+                                id="percentage"
+                                name="percentage"
+                                placeholder="Enter percentage"
+                                min="0"
+                                max="100"
+                                step="0.01"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="course">
+                                Preferred Course *
+                            </label>
+
+                            <select
+                                id="course"
+                                name="course"
+                                required
+                            >
+
+                                <option value="">
+                                    Select Course
+                                </option>
+
+                                <option value="cse">
+                                    B.Tech Computer Science
+                                </option>
+
+                                <option value="ece">
+                                    B.Tech Electronics
+                                </option>
+
+                                <option value="eee">
+                                    B.Tech Electrical
+                                </option>
+
+                                <option value="mech">
+                                    B.Tech Mechanical
+                                </option>
+
+                                <option value="civil">
+                                    B.Tech Civil
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="joiningYear">
+                                Admission Year
+                            </label>
+
+                            <input
+                                type="number"
+                                id="joiningYear"
+                                name="joiningYear"
+                                value="2026"
+                                readonly
+                            >
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- ================= INTERESTS ================= -->
+
+                <fieldset>
+
+                    <legend>Additional Information</legend>
+
+                    <div class="form-group">
+
+                        <label>Areas of Interest</label>
+
+                        <div class="checkbox-group">
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interest"
+                                    value="coding"
+                                >
+                                Coding
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interest"
+                                    value="ai"
+                                >
+                                Artificial Intelligence
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interest"
+                                    value="sports"
+                                >
+                                Sports
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interest"
+                                    value="music"
+                                >
+                                Music
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="comments">
+                            Additional Comments
+                        </label>
+
+                        <textarea
+                            id="comments"
+                            name="comments"
+                            rows="4"
+                            placeholder="Enter any additional information"
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="agreement">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                name="agreement"
+                                required
+                            >
+
+                            I confirm that the information provided
+                            above is correct.
+
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- ================= BUTTONS ================= -->
+
+                <div class="button-group">
+
+                    <button
+                        type="reset"
+                        class="reset-btn"
+                    >
+                        Reset Form
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="submit-btn"
+                    >
+                        Submit Application
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 ABC Institute of Technology | Student Admission Portal
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
